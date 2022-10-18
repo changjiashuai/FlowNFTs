@@ -1,0 +1,27 @@
+{
+	"contracts": {
+		"BottomShot": "./contracts/BottomShot.cdc",
+        "CatMoji": "./contracts/CatMoji.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "92f12e3e7329a4b206bf3eff0a7272f79a8931b613cecc54077b3afacfe3d23a"
+		},
+		"testnet-account": {
+			"fromFile": "testnet-account.private.json"
+		}
+	},
+	"deployments": {
+		"testnet": {
+			"testnet-account": [
+				"CatMoji"
+			]
+		}
+	}	
+}
